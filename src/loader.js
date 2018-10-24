@@ -8,7 +8,7 @@ import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 
 const store = createStore(
-  reducers, 
+  reducers,
   applyMiddleware(
     ReduxThunk
   ),
