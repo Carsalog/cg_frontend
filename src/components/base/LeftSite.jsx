@@ -4,7 +4,7 @@ import Form from "../common/form";
 import {getZip} from "../../actions";
 import {updateZipConfirm} from "../../actions";
 import {cookies} from "../../loader";
-import {zipShema} from "../common/shemas";
+import {zipSchema} from "../common/shemas";
 
 
 class LeftSite extends Form {
@@ -18,7 +18,7 @@ class LeftSite extends Form {
       errors: {}
     };
 
-    this.schema = zipShema();
+    this.schema = zipSchema();
   }
 
   componentDidMount() {
