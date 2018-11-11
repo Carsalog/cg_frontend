@@ -7,7 +7,7 @@ import {setMessage} from "../actions"
 import {loginSchema} from "./common/shemas";
 
 
-class Login extends Form {
+export class Login extends Form {
 
   state = {
     data: { email: '', password: '' },
@@ -64,9 +64,7 @@ class Login extends Form {
 
 export default connect(
   state => ({
-    user: state.user,
-    token: state.token,
-    config: state.config
+    user: state.user
   }),
   dispatch => ({
     onLoggedIn: () => dispatch(setMessage({error: "You are already logged in"}))
