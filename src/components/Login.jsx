@@ -1,7 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
 import Form from "./common/form";
-import OAuth from "./common/OAuth";
+import Icons from "./common/Icons";
 import auth from "../services/auth";
 import {setMessage} from "../actions"
 import {loginSchema} from "./common/shemas";
@@ -52,7 +52,7 @@ export class Login extends Form {
             </div>
           </span>
             <span className="col-6 d-inline-block">
-            <OAuth classes="link-gray mr-3 h4"/>
+            <Icons classes="link-gray mr-3 h4"/>
           </span>
           </form>
         </div>
