@@ -1,6 +1,6 @@
 import React from 'react';
-import LeftSite from './base/leftSite';
-import RightSite from './base/rightSite';
+import LeftSite from './base/LeftSite';
+import RightSite from './base/RightSite';
 
 
 const Base = props => (
