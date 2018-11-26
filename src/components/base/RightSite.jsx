@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from "react-redux";
 import PlaceInterface from "../common/PlaceInterface";
 import {getStates} from "../../actions";
-import {placeSchema} from "../common/shemas";
+import {placeSchema} from "../common/schemas";
 
 
 class RightSite extends PlaceInterface {

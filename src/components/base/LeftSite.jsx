@@ -4,7 +4,7 @@ import Form from "../common/form";
 import {getZip} from "../../actions";
 import {updateZipConfirm} from "../../actions";
 import {cookies} from "../../loader";
-import {zipSchema} from "../common/shemas";
+import {zipSchema} from "../common/schemas";
 
 
 class LeftSite extends Form {

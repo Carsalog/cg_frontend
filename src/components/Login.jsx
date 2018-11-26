@@ -4,7 +4,7 @@ import Form from "./common/form";
 import Icons from "./common/Icons";
 import auth from "../services/auth";
 import {setMessage} from "../actions"
-import {loginSchema} from "./common/shemas";
+import {loginSchema} from "./common/schemas";
 
 
 export class Login extends Form {
