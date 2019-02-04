@@ -4,14 +4,14 @@ import React from 'react';
 const Tags = ({tags, tag, onTagChange, onRemoveTag, error}) => (
   <div className="input-group mb-5 border-bottom">
     {tags.length > 0 && tags.map(tag =>
-        <span className="badge badge-primary tag-badge mr-2" key={tag._id}>
+      <span className="badge badge-primary tag-badge mr-2" key={tag._id}>
         <span
           onClick={() => onRemoveTag(tag)}
           className="pointer link-white float-right">
           <i className="fa fa-times" aria-hidden="true"> </i>
         </span>
-      <span className="px-1 text-uppercase">{tag.name}</span>
-    </span>
+        <span className="px-1 text-uppercase">{tag.name}</span>
+      </span>
     )}
     <input
       type="text"
