@@ -6,7 +6,7 @@ const states = (state = [], action) => {
     case GET_STATES:
       return action.payload;
     default:
-      return state
+      return state;
   }
 };
 
