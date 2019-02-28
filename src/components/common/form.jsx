@@ -4,17 +4,17 @@ import Input from "./input";
 import Select from "./select";
 import Textarea from "./Textarea";
 import {Link} from "react-router-dom";
+import {store} from "../../loader";
 
 
 class Form extends Component {
 
-  state = {
+   state = {
     data: {},
     errors: {}
   };
 
-  msg = "Password should have at least 1: uppercase, lowercase, digit and special character";
-  pdm = "Passwords don't match";
+  messages = store.getState().config.messages;
 
   validate = () => {
 
@@ -47,7 +47,7 @@ class Form extends Component {
     let value = input.value;
 
     if (input.name === "description") {
-      if (/[<>]+/.test(value)) errors[input.name] = "Special characters don't allow";
+      if (/[<>]+/.test(value)) errors[input.name] = this.messages.descriptionRulesError;
       value = value.replace(/[\s"']*(http[s]*:\/\/.*)[\s*"']*/, '')
     }
     data[input.name] = value;
@@ -57,7 +57,7 @@ class Form extends Component {
     else delete errors[input.name];
 
     // Password custom message
-    if (errors.password) errors.password = this.msg;
+    if (errors.password) errors.password = this.messages.pwdRulesError;
 
     // Checks that passwords equal
     if(this.state.data.passwordConf) this.validatePasswords(input, errors);
@@ -81,12 +81,12 @@ class Form extends Component {
     const passwordError = input.name === "password" && passwordConf.length && equal;
     const passwordsValid = input.name === "password" && passwordConf.length && !equal;
 
-    if (passwordError) errors.passwordConf = this.pdm;
+    if (passwordError) errors.passwordConf = this.messages.pwdMatchError;
     if (passwordsValid) errors.passwordConf = undefined;
 
 
     if (input.name === "passwordConf") {
-      if (equal) errors.passwordConf = this.pdm;
+      if (equal) errors.passwordConf = this.messages.pwdMatchError;
       else errors.passwordConf = undefined;
       this.setState({errors});
     }

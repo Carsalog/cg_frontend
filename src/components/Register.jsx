@@ -22,18 +22,18 @@ export class Register extends UserInterface {
 
 
   componentDidMount() {
-    const {user} = this.props;
+    const {user, messages} = this.props;
     const data = {...this.state.data};
     const errors = {...this.state.errors};
     if (user) {
       if (user.firstName && user.firstName.length > 0) data.firstName = user.firstName;
-      else errors.firstName = "First name cannot be empty";
+      else errors.firstName = messages.firstNameError;
       if (user.lastName && user.lastName.length > 0) data.lastName = user.lastName;
-      else errors.lastName = "Last name cannot be empty";
+      else errors.lastName = messages.lastNameError;
       if (user.email && user.email.length > 0) data.email = user.email;
-      else errors.email = "Email cannot be empty";
+      else errors.email = messages.emailError;
       if (user.phone && user.phone.length > 0) data.phone = user.phone;
-      else errors.phone = "Phone cannot be empty";
+      else errors.phone = messages.phoneError;
       this.setState({ data, errors });
     }
   }
@@ -92,6 +92,7 @@ export class Register extends UserInterface {
 
 export default connect(
   state => ({
-    user: state.user
+    user: state.user,
+    messages: state.config.messages
   })
 )(Register);

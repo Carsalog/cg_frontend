@@ -33,11 +33,10 @@ class LeftSite extends Form {
 
   handleUpdateZipConfirm = () => this.props.onUpdateZipConfirm({zip: true});
 
-  msg = 'The information is correctly? If not Try different zip code.';
 
   render() {
 
-    const {zip, confirms} = this.props;
+    const {zip, confirms, config} = this.props;
 
     return (
       <form onSubmit={this.handleSubmit}>
@@ -53,7 +52,7 @@ class LeftSite extends Form {
                 <span className="text-capitalize">{zip.city.name}, </span>
                 <span>{zip.state.abbreviation}</span>
               </h6>
-              <p className="card-text">{this.msg}</p>
+              <p className="card-text">{config.messages.zipMsg}</p>
               {this.renderLink("confirm", "/posts", this.handleUpdateZipConfirm)}
             </div>
           </div>
