@@ -2,17 +2,18 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {connect} from "react-redux";
 import Icons from "./Icons";
+import AdminButton from "./AdminButton";
 
 
 export class UserNav extends Component {
 
   render() {
     const {user} = this.props;
-
     if (user) return (
       <React.Fragment>
+        <AdminButton user={user.su} />
         <Link className="nav-item nav-link" to="/profile">
-          <span className="pr-1">Welcome {user.firstName} {user.lastName}!</span>
+          <span className="pr-1">{user.firstName} {user.lastName}</span>
           <i className="fa fa-user" aria-hidden="true"> </i>
         </Link>
         <Link className="nav-item nav-link" to="/logout">
