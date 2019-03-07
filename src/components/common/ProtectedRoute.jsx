@@ -5,11 +5,15 @@ import {setMessage} from "../../actions";
 
 
 const ProtectedRoute = ({path, component: Component, render, ...rest}) => {
+
   const state = store.getState();
+
   return (
     <Route {...rest} render={props => {
+
       if (!state.user) {
-        store.dispatch(setMessage({info: "You are not logged in"}));
+        const msg = state.config.messages.loginError;
+        store.dispatch(setMessage({error: msg}));
         return <Redirect to="/login"/>;
       }
       return Component ? <Component {...props} /> : render(props);
