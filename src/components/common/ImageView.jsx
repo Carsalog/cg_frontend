@@ -10,7 +10,7 @@ const ImageView = ({images, classes, base}) => (
         <Carousel>
           {images.map(image => (
             <div key={image._id}>
-              <img srcSet={base + image.url} alt="Carsolog image"/>
+              <img srcSet={base + image.url} alt={`Carsolog ${image._id}`}/>
             </div>
           ))}
         </Carousel>
