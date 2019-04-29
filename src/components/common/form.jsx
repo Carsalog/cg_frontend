@@ -9,7 +9,7 @@ import {store} from "../../loader";
 
 class Form extends Component {
 
-   state = {
+  state = {
     data: {},
     errors: {}
   };
@@ -27,11 +27,11 @@ class Form extends Component {
   };
 
 
-  validateProperty = ({ name, value }) => {
+  validateProperty = ({name, value}) => {
 
     let message;
 
-    const { error } = Joi.validate({ [name]: value }, { [name]: this.schema[name]});
+    const {error} = Joi.validate({[name]: value}, {[name]: this.schema[name]});
 
     if (error) message = error.details[0].message;
 
@@ -53,14 +53,14 @@ class Form extends Component {
     data[input.name] = value;
 
     // Set error message
-    if (errorMessage)  errors[input.name] = errorMessage;
+    if (errorMessage) errors[input.name] = errorMessage;
     else delete errors[input.name];
 
     // Password custom message
     if (errors.password) errors.password = this.messages.pwdRulesError;
 
     // Checks that passwords equal
-    if(this.state.data.passwordConf) this.validatePasswords(input, errors);
+    if (this.state.data.passwordConf) this.validatePasswords(input, errors);
 
     this.setState({data, errors});
   };
@@ -98,7 +98,7 @@ class Form extends Component {
     className="btn btn-primary w100">{label}</button>;
 
 
-  renderSelect (name, label, options, onChange) {
+  renderSelect(name, label, options, onChange) {
 
     const {data, errors} = this.state;
 
@@ -114,11 +114,13 @@ class Form extends Component {
     );
   }
 
-  renderLink = (label, url, onClick = () => {}) =>
+  renderLink = (label, url, onClick = () => {
+  }) =>
     (<Link to={url} className="text-uppercase link-gray" onClick={onClick} id={label}>{label}</Link>);
 
   renderInput(name, label, type = "text", af = false,
-              onBlur = () => {}, onChange=null, inputClasses=null) {
+              onBlur = () => {
+              }, onChange = null, inputClasses = null) {
     const {data, errors} = this.state;
     let classes, handleChange, error = errors[name];
 
