@@ -1,0 +1,311 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "description": "BMW 528i",
+      "stateId": "1",
+      "cityId": "1",
+      "makeId": "1",
+      "modelId": "1",
+      "year": 2015,
+      "carId": "1",
+      "transmissionId": "1",
+      "images": [],
+      "tags": [],
+      "userId": "1",
+      "date": "12/12/2017",
+      "isActive": true,
+      "mileage": 60000,
+      "price": 20000 
+    },
+    {
+      "id": "2",
+      "description": "Toyota Tacoma",
+      "stateId": "2",
+      "cityId": "2",
+      "makeId": "1",
+      "modelId": "1",
+      "year": 2015,
+      "carId": "2",
+      "transmissionId": "2",
+      "images": [],
+      "tags": [],
+      "userId": "2",
+      "date": "12/12/2017",
+      "isActive": true,
+      "mileage": 60000,
+      "price": 20000 
+    },
+    {
+      "id": "3",
+      "description": "Honda Civic",
+      "stateId": "3",
+      "cityId": "3",
+      "makeId": "3",
+      "modelId": "3",
+      "year": 2015,
+      "carId": "3",
+      "transmissionId": "1",
+      "images": [],
+      "tags": [],
+      "userId": "2",
+      "date": "10/9/2017",
+      "isActive": true,
+      "mileage": 60000,
+      "price": 20000 
+    },
+    {
+      "id": "4",
+      "description": "Honda Accord",
+      "stateId": "3",
+      "cityId": "3",
+      "makeId": "3",
+      "modelId": "4",
+      "year": 2015,
+      "carId": "4",
+      "transmissionId": "1",
+      "images": [],
+      "tags": [],
+      "userId": "2",
+      "date": "8/7/2018",
+      "isActive": true,
+      "mileage": 60000,
+      "price": 20000 
+    },
+    {
+      "id": "5",
+      "description": "BMW 528i",
+      "stateId": "1",
+      "cityId": "1",
+      "makeId": "1",
+      "modelId": "1",
+      "year": 2015,
+      "carId": "1",
+      "transmissionId": "1",
+      "images": [],
+      "tags": [],
+      "userId": "1",
+      "date": "12/12/2017",
+      "isActive": true,
+      "mileage": 60000,
+      "price": 20000 
+    },
+    {
+      "id": "6",
+      "description": "Toyota Tacoma",
+      "stateId": "3",
+      "cityId": "3",
+      "makeId": "2",
+      "modelId": "2",
+      "year": 2012,
+      "carId": "2",
+      "transmissionId": "2",
+      "images": [],
+      "tags": [],
+      "userId": "1",
+      "date": "12/12/2017",
+      "isActive": true,
+      "mileage": 60000,
+      "price": 20000 
+    },
+    {
+      "id": "7",
+      "description": "Honda Civic",
+      "stateId": "1",
+      "cityId": "1",
+      "makeId": "3",
+      "modelId": "3",
+      "year": 2015,
+      "carId": "3",
+      "transmissionId": "2",
+      "images": [],
+      "tags": [],
+      "userId": "2",
+      "date": "1/3/2018",
+      "isActive": true,
+      "mileage": 60000,
+      "price": 20000 
+    },
+    {
+      "id": "8",
+      "description": "BMW 525i",
+      "stateId": "2",
+      "cityId": "2",
+      "makeId": "1",
+      "modelId": "1",
+      "year": 2010,
+      "carId": "1",
+      "transmissionId": "2",
+      "images": [],
+      "tags": [],
+      "userId": "1",
+      "date": "12/12/2018",
+      "isActive": true,
+      "mileage": 60000,
+      "price": 20000 
+    },
+    {
+      "id": "9",
+      "description": "Honda Accord",
+      "stateId": "1",
+      "cityId": "1",
+      "makeId": "3",
+      "modelId": "4",
+      "year": 2015,
+      "carId": "1",
+      "transmissionId": "1",
+      "images": [],
+      "tags": [],
+      "userId": "1",
+      "date": "12/12/2017",
+      "isActive": true,
+      "mileage": 60000,
+      "price": 20000 
+    },
+    {
+      "id": "10",
+      "description": "A description",
+      "stateId": "1",
+      "cityId": "1",
+      "makeId": "1",
+      "modelId": "1",
+      "year": 2015,
+      "carId": "1",
+      "transmissionId": "1",
+      "images": [],
+      "tags": [],
+      "userId": "1",
+      "date": "12/12/2017",
+      "isActive": true,
+      "mileage": 60000,
+      "price": 20000 
+    }
+    
+  ],
+
+  "states": [
+    {
+      "id": "1",
+      "abbribbiation": "TX",
+      "name": "texas"
+    },
+    {
+      "id": "2",
+      "abbribbiation": "CA",
+      "name": "california"
+    },
+    {
+      "id": "3",
+      "abbribbiation": "WA",
+      "name": "‎washington"
+    }
+  ],
+
+  "cities": [
+    {
+      "id": "1",
+      "name": "austin"
+    },
+    {
+      "id": "2",
+      "name": "san francisco"
+    },
+    {
+      "id": "3",
+      "name": "sealltle"
+    }
+  ],
+
+  "makes": [
+    {
+      "id": "1",
+      "name": "bmw"
+    },
+    {
+      "id": "2",
+      "name": "toyota"
+    },
+    {
+      "id": "3",
+      "name": "honda"
+    }
+  ],
+
+  "models": [
+    {
+      "id": "1",
+      "name": "series 5"
+    },
+    {
+      "id": "2",
+      "name": "tacoma"
+    },
+    {
+      "id": "3",
+      "name": "civic"
+    },
+    {
+      "id": "4",
+      "name": "accord"
+    }
+  ],
+
+  "cars": [
+    {
+      "id": "1",
+      "make": "bmw",
+      "model": "528i",
+      "fuel": "gasoline",
+      "year": "2015",
+      "type": "sedan"
+    },
+    {
+      "id": "2",
+      "make": "toyota",
+      "model": "tacoma",
+      "fuel": "gasoline",
+      "year": "2015",
+      "type": "truk"
+    },
+    {
+      "id": "3",
+      "make": "honda",
+      "model": "civic",
+      "fuel": "gasoline",
+      "year": "2013",
+      "type": "sedan"
+    },
+    {
+      "id": "4",
+      "make": "honda",
+      "model": "accord",
+      "fuel": "gasoline",
+      "year": "2014",
+      "type": "sedan"
+    }
+  ],
+
+  "users": [
+    {
+      "id": "1",
+      "firstName": "John",
+      "lastName": "Doe"
+    },
+    {
+      "id": "2",
+      "firstName": "Piter",
+      "lastName": "Pan"
+    }
+  ],
+
+  "transmissions": [
+    {
+      "id": "1",
+      "type": "manual"
+    },
+    {
+      "id": "2",
+      "type": "automatic"
+    }
+  ]
+}
